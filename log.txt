@@ -1,0 +1,107 @@
+START:  Mon Dec 23 15:53:38 GMT 2019
+==> microstack: Removing domain...
+Bringing machine 'microstack' up with 'libvirt' provider...
+==> microstack: Checking if box 'generic/ubuntu1804' version '2.0.6' is up to date...
+==> microstack: Creating image (snapshot of base box volume).
+==> microstack: Creating domain with the following settings...
+==> microstack:  -- Name:              MicroStack-Vagrant-LibVirt_microstack
+==> microstack:  -- Domain type:       kvm
+==> microstack:  -- Cpus:              4
+==> microstack:  -- Feature:           acpi
+==> microstack:  -- Feature:           apic
+==> microstack:  -- Feature:           pae
+==> microstack:  -- Memory:            16384M
+==> microstack:  -- Management MAC:    
+==> microstack:  -- Loader:            
+==> microstack:  -- Nvram:             
+==> microstack:  -- Base box:          generic/ubuntu1804
+==> microstack:  -- Storage pool:      default
+==> microstack:  -- Image:             /var/lib/libvirt/images/MicroStack-Vagrant-LibVirt_microstack.img (32G)
+==> microstack:  -- Volume Cache:      default
+==> microstack:  -- Kernel:            
+==> microstack:  -- Initrd:            
+==> microstack:  -- Graphics Type:     vnc
+==> microstack:  -- Graphics Port:     -1
+==> microstack:  -- Graphics IP:       127.0.0.1
+==> microstack:  -- Graphics Password: Not defined
+==> microstack:  -- Video Type:        cirrus
+==> microstack:  -- Video VRAM:        256
+==> microstack:  -- Sound Type:	
+==> microstack:  -- Keymap:            en-us
+==> microstack:  -- TPM Path:          
+==> microstack:  -- INPUT:             type=mouse, bus=ps2
+==> microstack: Creating shared folders metadata...
+==> microstack: Starting domain.
+==> microstack: Waiting for domain to get an IP address...
+==> microstack: Waiting for SSH to become available...
+    microstack: 
+    microstack: Vagrant insecure key detected. Vagrant will automatically replace
+    microstack: this with a newly generated keypair for better security.
+    microstack: 
+    microstack: Inserting generated public key within guest...
+    microstack: Removing insecure key from the guest if it's present...
+    microstack: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> microstack: Setting hostname...
+==> microstack: Configuring and enabling network interfaces...
+==> microstack: Running provisioner: shell...
+    microstack: Running: /tmp/vagrant-shell20191223-13267-umdcvh.sh
+    microstack: SSH_CONNECTION=192.168.121.1 52960 192.168.121.141 22
+    microstack: _=/usr/bin/env
+    microstack: LANG=en_US.UTF-8
+    microstack: SUDO_GID=1000
+    microstack: USERNAME=root
+    microstack: SUDO_COMMAND=/bin/bash -l
+    microstack: S_COLORS=auto
+    microstack: XDG_SESSION_ID=4
+    microstack: USER=root
+    microstack: PWD=/home/vagrant
+    microstack: HOME=/root
+    microstack: SSH_CLIENT=192.168.121.1 52960 22
+    microstack: SUDO_USER=vagrant
+    microstack: XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+    microstack: SUDO_UID=1000
+    microstack: MAIL=/var/mail/vagrant
+    microstack: SHELL=/bin/bash
+    microstack: TERM=vt100
+    microstack: SHLVL=3
+    microstack: LANGUAGE=en_US:
+    microstack: LOGNAME=root
+    microstack: XDG_RUNTIME_DIR=/run/user/1000
+    microstack: PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+    microstack: TZ=Europe/Dublin
+    microstack: 2019-12-23T15:54:23Z INFO Waiting for restart...
+    microstack: microstack (edge) stein from Canonical* installed
+    microstack: 2019-12-23 15:55:59,326 - microstack_init - INFO - Configuring networking ...
+    microstack: 2019-12-23 15:56:00,940 - microstack_init - INFO - Setting up ipv4 forwarding...
+    microstack: 2019-12-23 15:56:02,257 - microstack_init - INFO - Opening horizon dashboard up to *
+    microstack: 2019-12-23 15:56:03,272 - microstack_init - INFO - Waiting for RabbitMQ to start ...
+    microstack: 2019-12-23 15:56:03,281 - microstack_init - INFO - RabbitMQ started!
+    microstack: 2019-12-23 15:56:03,281 - microstack_init - INFO - Configuring RabbitMQ ...
+    microstack: 2019-12-23 15:56:04,684 - microstack_init - INFO - RabbitMQ Configured!
+    microstack: 2019-12-23 15:56:04,718 - microstack_init - INFO - Waiting for MySQL server to start ...
+    microstack: 2019-12-23 15:56:04,729 - microstack_init - INFO - Mysql server started! Creating databases ...
+    microstack: /snap/microstack/198/lib/python3.6/site-packages/pymysql/cursors.py:170: Warning: (1287, 'Using GRANT for creating new user is deprecated and will be removed in future release. Create new user with CREATE USER statement.')
+    microstack:   result = self._query(query)
+    microstack: /snap/microstack/198/lib/python3.6/site-packages/pymysql/cursors.py:170: Warning: (1287, "Using GRANT statement to modify existing user's properties other than privileges is deprecated and will be removed in future release. Use ALTER USER statement for this operation.")
+    microstack:   result = self._query(query)
+    microstack: 2019-12-23 15:56:06,032 - microstack_init - INFO - Configuring Keystone Fernet Keys ...
+    microstack: 2019-12-23 15:56:36,139 - microstack_init - INFO - Bootstrapping Keystone ...
+    microstack: 2019-12-23 15:56:44,890 - microstack_init - INFO - Creating service project ...
+    microstack: 2019-12-23 15:56:52,368 - microstack_init - INFO - Keystone configured!
+    microstack: 2019-12-23 15:56:52,405 - microstack_init - INFO - Configuring nova compute hypervisor ...
+    microstack: 2019-12-23 15:57:09,444 - microstack_init - INFO - Configuring nova control plane services ...
+    microstack: 2019-12-23 15:59:51,705 - microstack_init - INFO - Creating default flavors...
+    microstack: 2019-12-23 16:00:27,808 - microstack_init - INFO - Configuring Neutron
+    microstack: 2019-12-23 16:02:40,572 - microstack_init - INFO - Configuring Glance ...
+    microstack: 2019-12-23 16:03:29,769 - microstack_init - INFO - Adding cirros image ...
+    microstack: 2019-12-23 16:03:37,433 - microstack_init - INFO - Creating microstack keypair (~/.ssh/id_microstack)
+    microstack: 2019-12-23 16:03:40,979 - microstack_init - INFO - Creating security group rules ...
+    microstack: 2019-12-23 16:03:54,478 - microstack_init - INFO - restarting libvirt and virtlogd ...
+    microstack: 2019-12-23 16:03:54,660 - microstack_init - INFO - Complete. Marked microstack as initialized!
+    microstack: Waiting for 10.20.20.1:5672
+    microstack: Waiting for 10.20.20.1:3306
+    microstack: Waiting for 10.20.20.1:8774
+    microstack: Waiting for 10.20.20.1:9696
+    microstack: Waiting for 10.20.20.1:9292
+    microstack: Please connect to http://192.168.10.2
+STOP:  Mon Dec 23 16:03:54 GMT 2019
