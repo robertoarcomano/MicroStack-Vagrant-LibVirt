@@ -4,3 +4,6 @@ vagrant destroy -f
 
 # 1. Start Vagrant VMs
 vagrant up --provider=libvirt
+
+# 2. Test Microstack
+./test_script.sh
