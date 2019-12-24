@@ -9,5 +9,5 @@ Vagrant.configure("2") do |config|
   end
   config.vm.define "microstack"
   config.vm.hostname = "microstack"
-  config.vm.network :private_network, ip: "192.168.10.2"
+  config.vm.network :private_network, ip: "10.20.20.1",libvirt__host_ip: "10.20.20.2"
 end

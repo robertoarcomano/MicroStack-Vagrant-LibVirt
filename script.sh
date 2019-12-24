@@ -9,7 +9,7 @@ snap install microstack --edge --classic
 microstack.init --auto
 
 # Final message
-echo "Please connect to http://192.168.10.2"
+echo "Please connect to http://10.20.20.1"
 
 
 
